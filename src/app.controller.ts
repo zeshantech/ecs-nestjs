@@ -19,4 +19,9 @@ export class AppController {
   getIP(): string {
     return this.appService.getIP();
   }
+
+  @Get('config')
+  getConfig() {
+    return this.appService.getConfig();
+  }
 }
